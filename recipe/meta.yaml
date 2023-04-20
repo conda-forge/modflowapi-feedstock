@@ -1,5 +1,5 @@
 {% set name = "modflowapi" %}
-{% set version = "0.0.1" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/modflowapi-{{ version }}.tar.gz
-  sha256: 2267c5caf822c236f45cd493c0121200d16ecd046bdb434260d6847c3de2a5f0
+  sha256: b214b22d1881940b6c42586681baa6595c63d93664a5508a9ab9afd75f784d23
 
 build:
   noarch: python
@@ -16,11 +16,16 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
-  run:
-    - python >=3.6
+    - numpy
     - xmipy
+    - pandas
+  run:
+    - python >=3.8
+    - numpy
+    - xmipy
+    - pandas
 
 test:
   imports:
@@ -39,3 +44,5 @@ about:
 extra:
   recipe-maintainers:
     - jdhughes-usgs
+    - jlarsen-usgs
+    - w-bonelli
