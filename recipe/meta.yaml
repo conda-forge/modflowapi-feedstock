@@ -18,9 +18,14 @@ requirements:
   host:
     - python >=3.8
     - pip
+    - numpy
+    - xmipy
+    - pandas
   run:
     - python >=3.8
+    - numpy
     - xmipy
+    - pandas
 
 test:
   imports:
