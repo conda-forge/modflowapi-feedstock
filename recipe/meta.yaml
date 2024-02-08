@@ -1,5 +1,5 @@
 {% set name = "modflowapi" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/modflowapi-{{ version }}.tar.gz
-  sha256: b214b22d1881940b6c42586681baa6595c63d93664a5508a9ab9afd75f784d23
+  sha256: ffe340c2a2634c6936d42d37b6292a4a4c8f3d5d466185a58ea49fc9d4780576
 
 build:
   noarch: python
@@ -45,4 +45,4 @@ extra:
   recipe-maintainers:
     - jdhughes-usgs
     - jlarsen-usgs
-    - w-bonelli
+    - wpbonelli
