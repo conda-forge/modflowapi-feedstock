@@ -3,11 +3,13 @@ About modflowapi-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/modflowapi-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/MODFLOW-USGS/modflowapi.git
+Home: https://github.com/MODFLOW-ORG/modflowapi
 
 Package license: CC0-1.0
 
 Summary: modflowapi is an extension to the xmipy Python package.
+
+Development: https://github.com/MODFLOW-ORG/modflowapi
 
 Current build status
 ====================
