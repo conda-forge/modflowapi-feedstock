@@ -1,32 +1,29 @@
 {% set name = "modflowapi" %}
-{% set version = "0.2.0" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/modflowapi-{{ version }}.tar.gz
-  sha256: ffe340c2a2634c6936d42d37b6292a4a4c8f3d5d466185a58ea49fc9d4780576
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/modflowapi-{{ version }}.tar.gz
+  sha256: 7e2bf2491673a68ce3532ee07530c01fcfb84b8e5673ac8142307e5e4174969a
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools
+    - hatchling
     - pip
-    - numpy
-    - xmipy
-    - pandas
   run:
     - python >={{ python_min }}
-    - numpy
-    - xmipy
-    - pandas
+    - numpy >=1.23
+    - pandas >=1.5
+    - xmipy >=1.5.0
 
 test:
   imports:
@@ -38,10 +35,11 @@ test:
     - python {{ python_min }}
 
 about:
-  home: https://github.com/MODFLOW-USGS/modflowapi.git
+  home: https://github.com/MODFLOW-ORG/modflowapi
   summary: modflowapi is an extension to the xmipy Python package.
   license: CC0-1.0
   license_file: LICENSE
+  dev_url: https://github.com/MODFLOW-ORG/modflowapi
 
 extra:
   recipe-maintainers:
