@@ -1,5 +1,5 @@
 {% set name = "modflowapi" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/modflowapi-{{ version }}.tar.gz
-  sha256: 7e2bf2491673a68ce3532ee07530c01fcfb84b8e5673ac8142307e5e4174969a
+  sha256: 1388d47f706115fee537a721e91700a3c9ad7b6e2a41b2f85f07cefe5f9d558e
 
 build:
   noarch: python
