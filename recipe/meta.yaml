@@ -21,8 +21,8 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - numpy >=1.23
-    - pandas >=2.2.2
+    - numpy >=2.2.0
+    - pandas >=2.3.0
     - xmipy >=1.5.0
 
 test:
